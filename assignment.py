@@ -7,12 +7,10 @@ class MySerializer(object):
         #load from json to dict
         #initialize object, return
         json_data = json.loads(jsonstr)
-        json.loads(jsonstr) = cls
-        return cls(**d)
+        return cls(json_data)
 
     def serialize(self):
         #iterate over self.my_attrs
-
+        pass
         #get attrs, set into dictionary
         #return dumps(dictionary)
-        with open jsonstr
