@@ -10,6 +10,9 @@ class MySerializer(object):
         return cls(json_data)
 
     def serialize(self):
+        #need to convert: from dict to json
+        #refer ti the dict: use json.dump to transfer
+        #dict to string
         #iterate over self.my_attrs
         pass
         #get attrs, set into dictionary
