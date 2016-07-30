@@ -14,6 +14,10 @@ class MySerializer(object):
         #refer ti the dict: use json.dump to transfer
         #dict to string
         #iterate over self.my_attrs
-        pass
         #get attrs, set into dictionary
         #return dumps(dictionary)
+        new_dict = {}
+        for keys,values in self.items:
+            serialized_dictionary[keys] = value
+            return dumps(serialized_value)
+
